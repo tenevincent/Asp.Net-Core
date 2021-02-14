@@ -1,0 +1,31 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using System.Timers
+
+<h1>Countdown</h1>
+<p>@Counter</p>
+<button @onclick="startCountdown">Start</button>
+
+@code {
+
+
+    [Parameter]
+    public int Counter { get; set; } = 0;
+
+
+    [Parameter]
+    public double EllapsedTime { get; set; } = 1000;
+
+
+    private void startCountdown()
+    {
+
+        Timer timer = new Timer(EllapsedTime);
+        timer.Elapsed += (source, e) =>
+        {
+            Counter--;
+            InvokeAsync(() => StateHasChanged());
+            if (Counter == 0) timer.Stop();
+        };
+        timer.Start();
+    }
+}

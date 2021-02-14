@@ -1,0 +1,7 @@
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.csprojAssemblyReference.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.AssemblyInfoInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.AssemblyInfo.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.csproj.CoreCompileInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.RazorAssemblyInfo.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Server\obj\Debug\netcoreapp3.1\BlazingPizza.Server.RazorAssemblyInfo.cs

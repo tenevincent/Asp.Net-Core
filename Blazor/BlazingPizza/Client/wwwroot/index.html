@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"  integrity=""/>
+
+    <link href="css/site.css" rel="stylesheet" integrity="" />
+    <link href="css/app.css" rel="stylesheet" integrity="" />
+    <link href="BlazingPizza.Client.styles.css" rel="stylesheet" integrity="" />
+    <link href="_content/BlazingPizza.ComponentsLibrary/leaflet/leaflet.css" rel="stylesheet" integrity="" />
+    <link rel="manifest" href="manifest.json" integrity="" />
+    <title>Blazing Pizza</title>
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js" integrity=""></script>
+    <script src="_framework/blazor.webassembly.js" integrity=""></script>
+
+    <script src="_content/BlazingPizza.ComponentsLibrary/localStorage.js" integrity=""></script>
+    <script src="_content/BlazingPizza.ComponentsLibrary/pushNotifications.js" integrity=""></script>
+    <script src="_content/BlazingPizza.ComponentsLibrary/deliveryMap.js" integrity=""></script>
+    <script src="_content/BlazingPizza.ComponentsLibrary/leaflet/leaflet.js" integrity=""></script>
+    <script integrity="">navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

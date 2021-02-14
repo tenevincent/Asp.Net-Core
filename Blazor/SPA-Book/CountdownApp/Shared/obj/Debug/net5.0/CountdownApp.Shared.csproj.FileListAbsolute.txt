@@ -1,0 +1,12 @@
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\bin\Debug\net5.0\CountdownApp.Shared.deps.json
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\bin\Debug\net5.0\CountdownApp.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\bin\Debug\net5.0\ref\CountdownApp.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\bin\Debug\net5.0\CountdownApp.Shared.pdb
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.csprojAssemblyReference.cache
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.AssemblyInfoInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.AssemblyInfo.cs
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.csproj.CoreCompileInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\ref\CountdownApp.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\CountdownApp\Shared\obj\Debug\net5.0\CountdownApp.Shared.pdb

@@ -1,0 +1,52 @@
+﻿@inherits LayoutComponentBase
+
+ 
+
+
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu MenuItems="MenuItems" OnMenuItemClick="MenuItemClick" />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4 auth">
+            <LoginDisplay />
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    public MenuItem[] MenuItems { get; set; }
+
+    protected override void OnInitialized()
+    {
+        this.loadMenuItems();
+    }
+
+    public void MenuItemClick(MenuItem item)
+    {
+        foreach (var menuItem in MenuItems)
+        {
+            menuItem.Active = false;
+        }
+        item.Active = true;
+    }
+
+    private void loadMenuItems()
+    {
+        this.MenuItems = new MenuItem[] {
+            new MenuItem() { Caption = "Article Categories", Url ="articlecategories", Active = true, Icon="oi oi-home" },
+            new MenuItem() { Caption = "Articles", Active = false , Url="Articles", Icon="oi oi-plus"}
+        };
+    }
+}
+
+

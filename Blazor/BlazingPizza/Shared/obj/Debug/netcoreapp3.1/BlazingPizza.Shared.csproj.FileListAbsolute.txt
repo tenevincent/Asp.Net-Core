@@ -1,0 +1,12 @@
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.AssemblyInfoInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.AssemblyInfo.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.csproj.CoreCompileInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\netcoreapp3.1\BlazingPizza.Shared.deps.json
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\netcoreapp3.1\BlazingPizza.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\netcoreapp3.1\BlazingPizza.Shared.pdb
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.pdb
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.csprojAssemblyReference.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.csproj.CopyComplete
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\netcoreapp3.1\BlazingPizza.Shared.pdb

@@ -1,0 +1,11 @@
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\bin\Debug\net5.0\ArticleManager.Shared.deps.json
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\bin\Debug\net5.0\ArticleManager.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\bin\Debug\net5.0\ref\ArticleManager.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\bin\Debug\net5.0\ArticleManager.Shared.pdb
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ArticleManager.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ArticleManager.Shared.AssemblyInfoInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ArticleManager.Shared.AssemblyInfo.cs
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ArticleManager.Shared.csproj.CoreCompileInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ArticleManager.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ref\ArticleManager.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\SPA-Book\ArticleManager\Shared\obj\Debug\net5.0\ArticleManager.Shared.pdb

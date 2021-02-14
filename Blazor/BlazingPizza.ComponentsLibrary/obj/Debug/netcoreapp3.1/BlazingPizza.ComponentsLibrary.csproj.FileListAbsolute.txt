@@ -1,0 +1,9 @@
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.AssemblyInfoInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.AssemblyInfo.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.csproj.CoreCompileInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.RazorComponent.input.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\RazorDeclaration\Map\Map.razor.g.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\RazorDeclaration\Component1.razor.g.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.RazorComponent.output.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza.ComponentsLibrary\obj\Debug\netcoreapp3.1\BlazingPizza.ComponentsLibrary.csprojAssemblyReference.cache

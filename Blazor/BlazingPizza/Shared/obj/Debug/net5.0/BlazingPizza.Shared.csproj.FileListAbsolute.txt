@@ -1,0 +1,16 @@
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\BlazingPizza.ComponentsLibrary.StaticWebAssets.xml
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\BlazingPizza.Shared.deps.json
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\BlazingPizza.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\ref\BlazingPizza.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\BlazingPizza.Shared.pdb
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\BlazingPizza.ComponentsLibrary.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\bin\Debug\net5.0\BlazingPizza.ComponentsLibrary.pdb
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.csprojAssemblyReference.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.AssemblyInfoInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.AssemblyInfo.cs
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.csproj.CoreCompileInputs.cache
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.csproj.CopyComplete
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\ref\BlazingPizza.Shared.dll
+C:\DevGit\Asp.Net Core\Blazor\BlazingPizza\Shared\obj\Debug\net5.0\BlazingPizza.Shared.pdb
