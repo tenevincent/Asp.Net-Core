@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApiAuthenticationApp
+namespace WebApi.With.Authentication
 {
     public class WeatherForecast
     {

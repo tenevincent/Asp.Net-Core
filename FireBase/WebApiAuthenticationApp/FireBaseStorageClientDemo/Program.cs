@@ -28,7 +28,7 @@ namespace FireBaseStorage.ClientApp
 
         private static void Main(string[] args)
         {
-            request = CurrentTask.DELETE;
+            request = CurrentTask.UPLOAD;
             Run().Wait();
 
             Console.Read();
@@ -44,8 +44,10 @@ namespace FireBaseStorage.ClientApp
             var auth = new FirebaseAuthProvider(new FirebaseConfig(ApiKey));
             var authLink = await auth.SignInWithEmailAndPasswordAsync(AuthEmail, AuthPassword);
 
-            // you can use CancellationTokenSource to cancel the upload midway
-            var cancellation = new CancellationTokenSource();
+            // var authLink2 = await auth.SignInWithOAuthAsync(FirebaseAuthType.Google, authLink.FirebaseToken);
+
+           // you can use CancellationTokenSource to cancel the upload midway
+           var cancellation = new CancellationTokenSource();
 
             var options =  
                 new FirebaseStorageOptions

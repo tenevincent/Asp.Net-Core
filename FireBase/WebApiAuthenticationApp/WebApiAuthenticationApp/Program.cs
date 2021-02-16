@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApiAuthenticationApp
+namespace WebApi.With.Authentication
 {
     public class Program
     {

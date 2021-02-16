@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FireBaseClientConsoleApp
+namespace FireBaseWebApi.ClientConsoleApp.Dtos
 {
     class WeatherForecastDto
     {

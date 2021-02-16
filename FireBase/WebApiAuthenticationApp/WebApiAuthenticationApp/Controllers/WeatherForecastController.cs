@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApiAuthenticationApp.Controllers
+namespace WebApi.With.Authentication.Controllers
 {
     [ApiController]
     [Route("api/WeatherForecast")]
