@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WebApiAuthenticationApp": {
+    "WebApi.With.Authentication": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

@@ -36,9 +36,6 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.8.5\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Auth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FirebaseAuthentication.net.3.0.4\lib\netstandard1.1\Firebase.Auth.dll</HintPath>
-    </Reference>
     <Reference Include="jose-jwt, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\jose-jwt.2.4.0\lib\net461\jose-jwt.dll</HintPath>
     </Reference>
@@ -358,6 +355,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Firebase.Auth\Firebase.Auth.csproj">
+      <Project>{138cf507-7b2d-458a-9b0f-7f6d90c19928}</Project>
+      <Name>Firebase.Auth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Firebase.Storage\Firebase.Storage.csproj">
       <Project>{4cb36ddb-0355-4d52-9501-63c785ec9cc0}</Project>
       <Name>Firebase.Storage</Name>

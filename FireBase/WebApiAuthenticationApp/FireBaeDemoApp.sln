@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAuthenticationApp", "WebApiAuthenticationApp\WebApiAuthenticationApp.csproj", "{6561BEA4-0870-4E48-AFB5-AADE25D821F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.With.Authentication", "WebApiAuthenticationApp\WebApi.With.Authentication.csproj", "{6561BEA4-0870-4E48-AFB5-AADE25D821F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireBaseWebApi.ClientConsoleApp", "FireBaseClientConsoleApp\FireBaseWebApi.ClientConsoleApp.csproj", "{8328E830-FB39-480A-9A3A-21B5F71D86AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireBaseWebApi.ClientConsoleApp", "FireBaseClientConsoleApp\FireBaseWebApi.ClientConsoleApp.csproj", "{8328E830-FB39-480A-9A3A-21B5F71D86AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms.FireStoreApp", "WindowsFormsFireStoreapp\WinForms.FireStoreApp.csproj", "{B41EF2C8-597E-45AD-A89D-1EF773E43459}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireBaseStorage.ClientApp", "FireBaseStorageClientDemo\FireBaseStorage.ClientApp.csproj", "{45D1048B-BDD0-4FD3-8989-A8C9FD65C6FE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firebase.Storage", "Firebase.Storage\Firebase.Storage.csproj", "{4CB36DDB-0355-4D52-9501-63C785EC9CC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firebase.Auth", "Firebase.Auth\Firebase.Auth.csproj", "{138CF507-7B2D-458A-9B0F-7F6D90C19928}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4CB36DDB-0355-4D52-9501-63C785EC9CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB36DDB-0355-4D52-9501-63C785EC9CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB36DDB-0355-4D52-9501-63C785EC9CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138CF507-7B2D-458A-9B0F-7F6D90C19928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138CF507-7B2D-458A-9B0F-7F6D90C19928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138CF507-7B2D-458A-9B0F-7F6D90C19928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138CF507-7B2D-458A-9B0F-7F6D90C19928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

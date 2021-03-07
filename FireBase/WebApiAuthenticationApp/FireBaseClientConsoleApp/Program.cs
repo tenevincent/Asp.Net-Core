@@ -1,9 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using FireBaseWebApi.ClientConsoleApp.Dtos;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace FireBaseClientConsoleApp
+namespace FireBaseWebApi.ClientConsoleApp
 {
     class Program
     {
