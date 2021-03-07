@@ -1,0 +1,44 @@
+﻿@page "/"
+@namespace BlazorNet5Samples.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+    var wasm = Request.Query.ContainsKey("wasm");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlazorServerApp1</title>
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="BlazorNet5Samples.Server.styles.css" rel="stylesheet" />
+</head>
+<body>
+    @if (wasm)
+    {
+        <component type="typeof(BlazorNet5Samples.Client.App)" render-mode="WebAssemblyPrerendered" />
+    }
+    else
+    {
+        <component type="typeof(BlazorNet5Samples.Server.App)" render-mode="ServerPrerendered" />
+    }
+
+
+    <div id="blazor-error-ui">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.@(wasm ? "webassembly" : "server").js"></script>
+</body>
+</html>

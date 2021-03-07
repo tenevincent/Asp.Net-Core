@@ -1,0 +1,123 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">BlazorNet5Samples</a>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="wasmSwitch" @bind="Wasm" />
+        <label class="custom-control-label" for="wasmSwitch">WebAssembly</label>
+    </div>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="css-isolation">
+                <span class="oi oi-check" aria-hidden="true"></span> CSS isolation
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="js-isolation">
+                <span class="oi oi-check" aria-hidden="true"></span> JavaScript isolation
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="file-upload">
+                <span class="oi oi-check" aria-hidden="true"></span> File upload
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="input-radio">
+                <span class="oi oi-check" aria-hidden="true"></span> InputRadio
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="virtualization">
+                <span class="oi oi-check" aria-hidden="true"></span> Virtualization
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="persisted-counter">
+                <span class="oi oi-check" aria-hidden="true"></span> Protected browser storage
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="lazy-loading">
+                <span class="oi oi-check" aria-hidden="true"></span> Lazy loading
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="ui-focus">
+                <span class="oi oi-check" aria-hidden="true"></span> Set UI focus
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="influence-html-head">
+                <span class="oi oi-check" aria-hidden="true"></span> Influence the HTML head
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="catch-all-route-parameters">
+                <span class="oi oi-check" aria-hidden="true"></span> Catch-all route parameters
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="wasm-prerendering">
+                <span class="oi oi-check" aria-hidden="true"></span> Blazor WebAssembly prerendering
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool wasm;
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    protected override void OnInitialized()
+    {
+        wasm = new Uri(NavigationManager.Uri).Query.Contains("wasm");
+    }
+
+    private bool Wasm
+    {
+        get => wasm;
+        set
+        {
+            if (wasm == value) return;
+            wasm = value;
+            var uriBuilder = new UriBuilder(NavigationManager.Uri);
+            if (wasm)
+            {
+                uriBuilder.Query = "wasm";
+            }
+            else
+            {
+                uriBuilder.Query = String.Empty;
+            }
+            NavigationManager.NavigateTo(uriBuilder.ToString(), forceLoad: true);
+        }
+    }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
