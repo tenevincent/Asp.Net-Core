@@ -2,16 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Chapter4.Events.ProgramStringExtensions</StartupObject>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="ConsoleDump" Version="0.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="LambdaExpressions\" />
   </ItemGroup>
 
 </Project>
