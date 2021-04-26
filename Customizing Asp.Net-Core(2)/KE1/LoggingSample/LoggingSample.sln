@@ -5,17 +5,21 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE1.LoggingSample", "LoggingSample\KE1.LoggingSample.csproj", "{6C0BAE50-7325-422D-BF3F-9DDDC8A706D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE2.ConfigureSample", "KE2.ConfigureSample\KE2.ConfigureSample.csproj", "{F861C55C-FE01-491F-B097-7BE8E929BCA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE2.ConfigureSample", "KE2.ConfigureSample\KE2.ConfigureSample.csproj", "{F861C55C-FE01-491F-B097-7BE8E929BCA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE3.DiSample", "DiSample\KE3.DiSample.csproj", "{FC37D226-C67F-4305-8877-FE2B8E840E60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE3.DiSample", "DiSample\KE3.DiSample.csproj", "{FC37D226-C67F-4305-8877-FE2B8E840E60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModel", "CustomModel\CustomModel.csproj", "{AD71CAED-519D-4849-A6BB-ABEEAB8682DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomModel", "CustomModel\CustomModel.csproj", "{AD71CAED-519D-4849-A6BB-ABEEAB8682DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE4.HttpSample", "KE4.HttpSample\KE4.HttpSample.csproj", "{218DABCB-2511-4135-97CA-B67BED18A19D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE4.HttpSample", "KE4.HttpSample\KE4.HttpSample.csproj", "{218DABCB-2511-4135-97CA-B67BED18A19D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE5.HostedServiceSample", "KE5.HostedServiceSample\KE5.HostedServiceSample.csproj", "{49933ED3-4285-4BB2-B286-561E64A42F13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE5.HostedServiceSample", "KE5.HostedServiceSample\KE5.HostedServiceSample.csproj", "{49933ED3-4285-4BB2-B286-561E64A42F13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE6.MiddlewaresSample", "KE6.MiddlewaresSample\KE6.MiddlewaresSample.csproj", "{E2E5D5AA-E297-41A2-969E-E9AA6BD2B698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE6.MiddlewaresSample", "KE6.MiddlewaresSample\KE6.MiddlewaresSample.csproj", "{E2E5D5AA-E297-41A2-969E-E9AA6BD2B698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE7.OutputFormatterSample", "KE7.OutputFormatterSample\KE7.OutputFormatterSample.csproj", "{115B4544-903E-4FB2-92F4-A304F3E89599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE8.ModelBinderSample", "KE8.ModelBinderSample\KE8.ModelBinderSample.csproj", "{730EADA3-299D-4695-A496-AC5BD17BE1FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{E2E5D5AA-E297-41A2-969E-E9AA6BD2B698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2E5D5AA-E297-41A2-969E-E9AA6BD2B698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2E5D5AA-E297-41A2-969E-E9AA6BD2B698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{115B4544-903E-4FB2-92F4-A304F3E89599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{115B4544-903E-4FB2-92F4-A304F3E89599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{115B4544-903E-4FB2-92F4-A304F3E89599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{115B4544-903E-4FB2-92F4-A304F3E89599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
