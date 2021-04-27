@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE5.HostedServiceSample", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE6.MiddlewaresSample", "KE6.MiddlewaresSample\KE6.MiddlewaresSample.csproj", "{E2E5D5AA-E297-41A2-969E-E9AA6BD2B698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE7.OutputFormatterSample", "KE7.OutputFormatterSample\KE7.OutputFormatterSample.csproj", "{115B4544-903E-4FB2-92F4-A304F3E89599}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE7.OutputFormatterSample", "KE7.OutputFormatterSample\KE7.OutputFormatterSample.csproj", "{115B4544-903E-4FB2-92F4-A304F3E89599}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE8.ModelBinderSample", "KE8.ModelBinderSample\KE8.ModelBinderSample.csproj", "{730EADA3-299D-4695-A496-AC5BD17BE1FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE8.ModelBinderSample", "KE8.ModelBinderSample\KE8.ModelBinderSample.csproj", "{730EADA3-299D-4695-A496-AC5BD17BE1FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KEB14.CustomException", "KE14.CustomException\KEB14.CustomException.csproj", "{F2C7ADCE-76FC-4AED-8B18-20189D554756}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{730EADA3-299D-4695-A496-AC5BD17BE1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
