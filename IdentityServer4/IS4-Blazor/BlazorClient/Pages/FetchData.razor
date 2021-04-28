@@ -1,5 +1,12 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Net.Http.Headers 
+
+@inject IAccessTokenProvider TokenProvider
+
+
+
 @attribute [Authorize]
 
 
@@ -39,7 +46,9 @@ else
 @code {
     private WeatherForecast[] forecasts;
 
-    protected override async Task OnInitializedAsync()
+        
+
+        protected override async Task OnInitializedAsync()
     {
         Console.WriteLine("START....Fechting the data...");
 
@@ -48,7 +57,21 @@ else
             Console.WriteLine(header.Value);
         }
         Console.WriteLine("END....Fechting the data...");
-         
+
+        var tokenResult = await TokenProvider.RequestAccessToken();
+
+        Http.DefaultRequestHeaders.Remove("Authorization");
+
+        AccessToken token = null;
+        if (tokenResult.TryGetToken(out   token))
+        {
+            Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {token.Value}");
+            Console.WriteLine("Setting Bearer Token SUCCESS...");
+        }
+        else
+        {
+            Console.WriteLine("Setting Bearer Token FAILED...");
+        }
 
         forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:5002/WeatherForecast");
     }

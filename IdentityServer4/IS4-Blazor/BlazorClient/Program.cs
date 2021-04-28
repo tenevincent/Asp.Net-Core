@@ -23,26 +23,28 @@ namespace BlazorClient
            // builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             // We register a named HttpClient here for the API
-            builder.Services.AddHttpClient("api")
-                .AddHttpMessageHandler(sp =>
-                {
-                    var handler = sp.GetService<AuthorizationMessageHandler>()
-                        .ConfigureHandler(
-                            authorizedUrls: new[] { "https://localhost:5002"  },
-                            scopes: new[] { "weatherapi" });
-                    return handler;
-                });
+            //builder.Services.AddHttpClient("api")
+            //    .AddHttpMessageHandler(sp =>
+            //    {
+            //        var handler = sp.GetService<AuthorizationMessageHandler>()
+            //            .ConfigureHandler(
+            //                authorizedUrls: new[] { "https://localhost:5002"  },
+            //                scopes: new[] { "weatherapi" });
+            //        return handler;
+            //    });
+
+            builder.Services.AddScoped<CustomAuthorizationMessageHandler>();
+
+            builder.Services.AddHttpClient("api",
+                    client => client.BaseAddress = new Uri("https://localhost:5002"))
+                .AddHttpMessageHandler<CustomAuthorizationMessageHandler>();
+
+
+
             // we use the api client as default HttpClient
             builder.Services.AddScoped(
               sp => sp.GetService<IHttpClientFactory>().CreateClient("api"));
 
-
-            //builder.Services.AddOidcAuthentication(options =>
-            //{
-            //    // Configure your authentication provider options here.
-            //    // For more information, see https://aka.ms/blazor-standalone-auth
-            //    builder.Configuration.Bind("oidc", options.ProviderOptions);
-            //});
 
             builder.Services
                .AddOidcAuthentication(options =>

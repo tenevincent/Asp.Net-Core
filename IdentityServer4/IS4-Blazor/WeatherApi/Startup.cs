@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,28 +33,23 @@ namespace WeatherApi
             services.AddControllers();
 
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme,options =>
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme,options =>
+            //    {
+            //        options.Authority = "https://localhost:5000";
+            //        options.A
+            //        options.Audience = "weatherapi";
+            //    });
+            services.AddAuthentication(
+     IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(options =>
                 {
-                    options.Authority = "https://localhost:5000";
-                    options.Audience = "weatherapi";
-                    options.TokenValidationParameters = new TokenValidationParameters()
-                    {
-                        NameClaimType = "name"
-                    };
-
-
+                    options.Authority = "https://localhost:5000/";
+                    options.ApiName = "weatherapi";
+  
+                    options.RequireHttpsMetadata = false;
+                 
                 });
-
-  //          services.AddAuthentication("Bearer")
-  //.AddJwtBearer("Bearer", options =>
-  //{
-  //    options.Authority = "http://localhost:5000";
-  //    options.RequireHttpsMetadata = false;
-
-  //    options.Audience = "blazorcontacts-api";
-  //});
-
 
 
             services.AddCors(options =>
