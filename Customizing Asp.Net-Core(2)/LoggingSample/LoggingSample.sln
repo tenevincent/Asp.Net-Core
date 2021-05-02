@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KE8.ModelBinderSample", "KE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KEB14.CustomException", "KE14.CustomException\KEB14.CustomException.csproj", "{F2C7ADCE-76FC-4AED-8B18-20189D554756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KE9.ActionFilterSample", "KE90.ActionFilterSample\KE9.ActionFilterSample.csproj", "{B4360EA4-CB00-4409-B4F0-EB3B5E243198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEB10.TagHelperSample", "KE10.TagHelperSample\KEB10.TagHelperSample.csproj", "{D235A40B-7AA5-4FCC-8AF8-8333715D9F07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C7ADCE-76FC-4AED-8B18-20189D554756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4360EA4-CB00-4409-B4F0-EB3B5E243198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4360EA4-CB00-4409-B4F0-EB3B5E243198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4360EA4-CB00-4409-B4F0-EB3B5E243198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4360EA4-CB00-4409-B4F0-EB3B5E243198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D235A40B-7AA5-4FCC-8AF8-8333715D9F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D235A40B-7AA5-4FCC-8AF8-8333715D9F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D235A40B-7AA5-4FCC-8AF8-8333715D9F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D235A40B-7AA5-4FCC-8AF8-8333715D9F07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
