@@ -66,7 +66,7 @@ else
         if (tokenResult.TryGetToken(out   token))
         {
             Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {token.Value}");
-            Console.WriteLine("Setting Bearer Token SUCCESS...");
+            Console.WriteLine("Setting Bearer Token SUCCESS..." + $"Bearer {token.Value}" );
         }
         else
         {

@@ -20,29 +20,30 @@ namespace BlazorClient
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
-           // builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            // builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-            // We register a named HttpClient here for the API
-            //builder.Services.AddHttpClient("api")
-            //    .AddHttpMessageHandler(sp =>
-            //    {
-            //        var handler = sp.GetService<AuthorizationMessageHandler>()
-            //            .ConfigureHandler(
-            //                authorizedUrls: new[] { "https://localhost:5002"  },
-            //                scopes: new[] { "weatherapi" });
-            //        return handler;
-            //    });
+            //We register a named HttpClient here for the API
 
-            builder.Services.AddScoped<CustomAuthorizationMessageHandler>();
-
-            builder.Services.AddHttpClient("api",
-                    client => client.BaseAddress = new Uri("https://localhost:5002"))
-                .AddHttpMessageHandler<CustomAuthorizationMessageHandler>();
+           builder.Services.AddHttpClient("api")
+               .AddHttpMessageHandler(sp =>
+               {
+                   var handler = sp.GetService<AuthorizationMessageHandler>()
+                       .ConfigureHandler(
+                           authorizedUrls: new[] { "https://localhost:5002" },
+                           scopes: new[] { "weatherapi" });
+                   return handler;
+               });
 
 
+           //builder.Services.AddScoped<CustomAuthorizationMessageHandler>();
+           //builder.Services.AddHttpClient("api",
+           //        client => client.BaseAddress = new Uri("https://localhost:5002"))
+           //    .AddHttpMessageHandler<CustomAuthorizationMessageHandler>();
 
-            // we use the api client as default HttpClient
-            builder.Services.AddScoped(
+
+
+           // we use the api client as default HttpClient
+           builder.Services.AddScoped(
               sp => sp.GetService<IHttpClientFactory>().CreateClient("api"));
 
 

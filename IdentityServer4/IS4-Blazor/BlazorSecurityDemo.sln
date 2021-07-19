@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityProvider", "Identit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorClient", "BlazorClient\BlazorClient.csproj", "{CA7B5987-78FD-4ED0-8598-49B4CE6CCC5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApi", "WeatherApi\WeatherApi.csproj", "{53A916AC-8E72-459A-8B2D-022EABA87C1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherApi", "WeatherApi\WeatherApi.csproj", "{53A916AC-8E72-459A-8B2D-022EABA87C1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,18 @@ Global
 		{53A916AC-8E72-459A-8B2D-022EABA87C1D}.Release|x64.Build.0 = Release|Any CPU
 		{53A916AC-8E72-459A-8B2D-022EABA87C1D}.Release|x86.ActiveCfg = Release|Any CPU
 		{53A916AC-8E72-459A-8B2D-022EABA87C1D}.Release|x86.Build.0 = Release|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Debug|x64.Build.0 = Debug|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Release|x64.ActiveCfg = Release|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Release|x64.Build.0 = Release|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F224F27D-5D9C-4E0C-91D9-1BCA123D521B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

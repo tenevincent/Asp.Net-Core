@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -9,11 +10,9 @@ using Microsoft.Extensions.Logging;
 namespace WeatherApi.Controllers
 {
 
-     [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("[controller]")]
-  
-
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
