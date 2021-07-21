@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Services";
+
+package calculator;
+
+// The greeting service definition.
+service Calculator {
+  // Sends a greeting
+  rpc Calculate (ParamsRequest) returns (ResultResponse);
+}
+
+message ParamsRequest{
+	int32 first_number = 1;
+	int32 second_number = 2;
+}
+// The request message containing the user's name.
+message ResultResponse {
+  int32 sum = 1;
+}
+
+ 

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Services";
+package prime;
+ 
+
+message PrimeNumberDecompositionRequest {
+	int32 number = 1;
+}
+
+message PrimeNumberDecompositionResponse {
+	int32 prime_factor = 1;
+}
+
+service PrimeNumber {
+	rpc PrimeNumberDecomposition (PrimeNumberDecompositionRequest) returns (stream PrimeNumberDecompositionResponse) {}
+}
+
+  

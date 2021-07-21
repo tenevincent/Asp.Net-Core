@@ -1,0 +1,39 @@
+using BlazorGrpc;
+using Grpc.Net.Client;
+using Grpc.Net.Client.Web;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace BlazorWebAssembly.WithgRPC.Client
+{
+    public class Program
+    {
+        const string target = "127.0.0.1:50051";
+        private static GrpcChannel _channel;
+        private static WeatherForecasts.WeatherForecastsBase  _client;
+
+        public static async Task Main(string[] args)
+        {
+            var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            builder.RootComponents.Add<App>("#app");
+
+            // builder.Services.AddSingleton()
+            builder.Services.AddScoped(services =>
+                {
+                    // Create a gRPC-Web channel pointing to the backend server
+                    var httpClient = new HttpClient(new GrpcWebHandler(GrpcWebMode.GrpcWeb, new HttpClientHandler()));
+                    var baseUri = services.GetRequiredService<NavigationManager>().BaseUri;
+                    var channel = GrpcChannel.ForAddress(baseUri, new GrpcChannelOptions { HttpClient = httpClient });
+                      
+                    // Now we can instantiate gRPC clients for this channel
+                    return new WeatherForecasts.WeatherForecastsClient(channel);
+
+                });
+
+            await builder.Build().RunAsync();
+        }
+    }
+}

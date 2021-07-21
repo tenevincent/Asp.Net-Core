@@ -1,0 +1,89 @@
+﻿@page "/fetchdata"
+@inject HttpClient Http
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Net.Http.Headers 
+
+@inject IAccessTokenProvider TokenProvider
+
+
+
+@attribute [Authorize]
+
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private WeatherForecast[] forecasts;
+
+        
+
+        protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("START....Fechting the data...");
+
+        foreach (var header in Http.DefaultRequestHeaders)
+        {
+            Console.WriteLine(header.Value);
+        }
+        Console.WriteLine("END....Fechting the data...");
+
+        var tokenResult = await TokenProvider.RequestAccessToken();
+
+        Http.DefaultRequestHeaders.Remove("Authorization");
+
+        AccessToken token = null;
+        if (tokenResult.TryGetToken(out   token))
+        {
+            Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {token.Value}");
+            Console.WriteLine("Setting Bearer Token SUCCESS..." + $"Bearer {token.Value}" );
+        }
+        else
+        {
+            Console.WriteLine("Setting Bearer Token FAILED...");
+        }
+
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:5002/WeatherForecast");
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}
