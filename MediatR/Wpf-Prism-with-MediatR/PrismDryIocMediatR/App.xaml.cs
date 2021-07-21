@@ -35,6 +35,7 @@ namespace PrismDryIocMediatR
             // more view registrations here
 
 
+        
         }
     }
 }
