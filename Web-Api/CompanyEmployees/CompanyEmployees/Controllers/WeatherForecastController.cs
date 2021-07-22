@@ -3,7 +3,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace CompanyEmployees.Controllers
 {
@@ -35,7 +34,7 @@ namespace CompanyEmployees.Controllers
             _logger.LogError("Here is an error message from our values controller.", "GET-Command");
             _logger.LogError("{data}#{USER}#This is a message from ", "GET-Command", "Mickey Donovan");
 
-            var rng = new Random();
+            Random rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
