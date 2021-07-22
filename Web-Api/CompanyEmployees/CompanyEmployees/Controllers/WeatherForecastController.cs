@@ -18,6 +18,9 @@ namespace CompanyEmployees.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
+
+
+
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
@@ -26,6 +29,12 @@ namespace CompanyEmployees.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("Here is info message from our values controller.", "GET-Command");
+            _logger.LogDebug("Here is debug message from our values controller.", "GET-Command");
+            _logger.LogWarning("Here is warn message from our values controller.", "GET-Command");
+            _logger.LogError("Here is an error message from our values controller.", "GET-Command");
+            _logger.LogError("{data}#{USER}#This is a message from ", "GET-Command", "Mickey Donovan");
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
